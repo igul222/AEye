@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
-
+@property(nonatomic, strong) UIImagePickerController *picker;
+@property(nonatomic, strong) UILabel *label;
 @end
 
